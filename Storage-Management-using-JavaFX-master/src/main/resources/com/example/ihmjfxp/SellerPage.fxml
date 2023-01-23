@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  /* -  Storage management Project  -
+* This program was written by @Latif & @NahlaMih
+* for the IHM TP project (L3-ISIL)
+*/  -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ihmjfxp.seller_view_control">
+   <children>
+      <VBox prefHeight="856.0" prefWidth="254.0" style="-fx-background-color: #bbc3c9;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="254.0" fitWidth="364.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Employee.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="254.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="100.0" text="Employee :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="34.0" prefWidth="149.0" text="EMPLOYEE NAME" textFill="#15bdff" underline="true" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="254.0" text="Products">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Products%204l2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="254.0" text="Suppliers">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="979.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Suppliers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="254.0" text="Statistics">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/stats%2001.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="254.0" text="Employees Settings">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Employee%20settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button disable="true" mnemonicParsing="false" prefHeight="40.0" prefWidth="254.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/NovaradHome2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_logout" alignment="CENTER" contentDisplay="RIGHT" depthTest="DISABLE" mnemonicParsing="false" onAction="#btn_logout_clicked" prefHeight="40.0" prefWidth="254.0" text="Log Out">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="167.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="254.0" layoutY="-2.0">
+         <children>
+            <ImageView fitHeight="159.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Products%204l2.png" />
+               </image>
+            </ImageView>
+            <Line endX="831.2929077148438" endY="-2.071068048477173" startX="-100.0" startY="-2.071079730987549" stroke="#cccccc" strokeWidth="5.0" />
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="991.0">
+               <children>
+                  <Label disable="true" text="Product Name :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtpname" disable="true" promptText="Name">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Product Code :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtspcode" promptText="Code">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label disable="true" text="Product Category :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="category" disable="true" prefWidth="150.0" promptText="Category">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="1000.0">
+               <children>
+                  <Label disable="true" text="Product Price:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txtprice" disable="true" promptText="Price" />
+                  <Label disable="true" text="Expiration Date :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <DatePicker fx:id="expdate" disable="true" promptText="Best Before">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <Label text="Product Quantity  : ">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="spquant">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Spinner>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" disable="true" prefHeight="87.0" prefWidth="1000.0" spacing="150.0">
+               <children>
+                  <Button mnemonicParsing="false" text="Add Product">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Edit Product">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Delete Product">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="65.0" prefWidth="1000.0" spacing="150.0">
+               <children>
+                  <Button fx:id="sbtneditp" mnemonicParsing="false" onAction="#editproquants_clicked" text="Edit Product Quantity">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sbtnshowpl" mnemonicParsing="false" onAction="#Showproductlists_clicked" text="Show Product List">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="251.0" layoutY="473.0" prefHeight="402.0" prefWidth="993.0">
+         <children>
+            <TableView fx:id="tables" prefHeight="423.0" prefWidth="993.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="tbsid" minWidth="-Infinity" prefWidth="110.0" text="Product ID" />
+                  <TableColumn fx:id="tbsname" minWidth="-Infinity" prefWidth="240.0" text="Product Name " />
+                  <TableColumn fx:id="tbsprice" minWidth="-Infinity" prefWidth="110.0" text="Price" />
+                  <TableColumn fx:id="tbscat" minWidth="-Infinity" prefWidth="180.0" text="Category" />
+                  <TableColumn fx:id="tbsdis" minWidth="-Infinity" prefWidth="130.0" text="Discount" />
+                  <TableColumn fx:id="tbsquant" minWidth="-Infinity" prefWidth="110.0" text="Product Quantity" />
+                  <TableColumn fx:id="tbsexp" editable="false" minWidth="-Infinity" prefWidth="106.0" sortable="false" text="Expiration Date" />
+               </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <Label fx:id="labelaffichagemessages" alignment="CENTER" contentDisplay="CENTER" layoutX="720.0" layoutY="450.0" text="Label" visible="false" />
+   </children>
+</AnchorPane>

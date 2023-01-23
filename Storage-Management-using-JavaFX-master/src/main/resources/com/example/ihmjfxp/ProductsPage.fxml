@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  /* -  Storage management Project  -
+* This program was written by @Latif & @NahlaMih
+* for the IHM TP project (L3-ISIL)
+*/  -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ihmjfxp.product_view_control">
+   <children>
+      <VBox prefHeight="867.0" prefWidth="240.0" style="-fx-background-color: #bbc3c9;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="254.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Admin%202.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="254.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="100.0" text="   Admin : " textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="34.0" prefWidth="149.0" text="Admin Name" textAlignment="CENTER" textFill="#337390" underline="true" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="btn_product" mnemonicParsing="false" onAction="#btn_product_clicked" prefHeight="40.0" prefWidth="254.0" text="Products">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Products%204l2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_supplier" mnemonicParsing="false" onAction="#btn_supplier_clicked" prefHeight="40.0" prefWidth="254.0" text="Suppliers">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="979.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Suppliers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_stats" mnemonicParsing="false" onAction="#btn_stats_clicked" prefHeight="40.0" prefWidth="254.0" text="Statistics">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/stats%2001.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_empset" mnemonicParsing="false" onAction="#btn_empset_clicked" prefHeight="40.0" prefWidth="254.0" text="Employees Settings">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Employee%20settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_adm_home" mnemonicParsing="false" onAction="#btn_adm_home_clicked" prefHeight="40.0" prefWidth="254.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/NovaradHome2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_logout" alignment="CENTER" contentDisplay="RIGHT" depthTest="DISABLE" mnemonicParsing="false" onAction="#btn_logout_clicked" prefHeight="40.0" prefWidth="254.0" text="Log Out">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="157.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="240.0">
+         <children>
+            <VBox prefHeight="76.0" prefWidth="991.0">
+               <children>
+                  <ImageView fitHeight="159.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Products%204l2.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Line endX="562.4644775390625" endY="-2.071079730987549" startX="-100.0" startY="-2.071079730987549" stroke="#cccccc" strokeLineCap="ROUND" strokeWidth="5.0" />
+            <HBox prefHeight="122.0" prefWidth="1000.0">
+               <children>
+                  <ImageView fitHeight="106.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Alert.png" />
+                     </image>
+                  </ImageView>
+                  <VBox prefHeight="137.0" prefWidth="453.0">
+                     <children>
+                        <Label fx:id="labelexpdate" alignment="CENTER" contentDisplay="CENTER" text="Products near expiration date  : " textFill="#67cdfd">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tableexp" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="tb1id" prefWidth="99.0" text="Product ID" />
+                            <TableColumn fx:id="tb1name" prefWidth="234.0" text="Product name " />
+                              <TableColumn fx:id="tb1exp" minWidth="6.0" prefWidth="114.0" text="Expiration date" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="105.0" prefWidth="443.0">
+                     <children>
+                        <Label fx:id="labelstockrapture" alignment="CENTER" contentDisplay="CENTER" text="Stock rapture products :" textFill="#67cdfd">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tablerapstock" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="tb2id" prefWidth="75.0" text="Product ID " />
+                            <TableColumn fx:id="tb2name" prefWidth="240.0" text="Product Name" />
+                              <TableColumn fx:id="tb2quant" prefWidth="126.0" text="Product Quantity" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Line endX="831.2929077148438" endY="-2.071068048477173" startX="-100.0" startY="-2.071079730987549" stroke="#cccccc" strokeLineCap="ROUND" strokeWidth="5.0" />
+            <HBox alignment="CENTER" prefHeight="74.0" prefWidth="991.0">
+               <children>
+                  <Label text="Product Name :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtpname" promptText="Name">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="    Product Code :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtpcode" promptText="Code">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Product Category :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <ComboBox fx:id="category" prefWidth="150.0" promptText="Category">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </ComboBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="22.0" prefWidth="1000.0">
+               <children>
+                  <Label text="Product Discount :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txtdiscount" promptText="Discount" text="0" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="33.0" prefWidth="1000.0">
+               <children>
+                  <Label text="Product Price:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="txtprice" promptText="Price" />
+                  <Label text="Expiration Date :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                  </Label>
+                  <DatePicker fx:id="expdate" promptText="Best Before">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </DatePicker>
+                  <Label text="Product Quantity  : ">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Spinner fx:id="pquant" editable="true">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Spinner>
+               </children>
+            </HBox>
+            <Line endX="884.5" startX="-100.0" strokeWidth="5.0">
+               <stroke>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Line>
+            <HBox alignment="CENTER" prefHeight="68.0" prefWidth="1000.0" spacing="150.0">
+               <children>
+                  <Button fx:id="btnaddp" mnemonicParsing="false" onAction="#addproduct_clicked" text="Add Product">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btneditp" mnemonicParsing="false" onAction="#editproduct_clicked" text="Edit Product">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btndelp" mnemonicParsing="false" onAction="#deleteproduct_clicked" text="Delete Product">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="1000.0" spacing="150.0">
+               <children>
+                  <Button fx:id="btneditpq" mnemonicParsing="false" onAction="#editproquant_clicked" text="Edit Product Quantity">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="btnshowpl" mnemonicParsing="false" onAction="#Showproductlist_clicked" text="Show Product List">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Label fx:id="labelaffichagemessage" alignment="CENTER" contentDisplay="CENTER" layoutX="247.0" layoutY="567.0" prefHeight="17.0" prefWidth="987.0" text=" " textAlignment="CENTER" underline="true" visible="false" />
+      <VBox layoutX="240.0" layoutY="583.0" prefHeight="284.0" prefWidth="1006.0">
+         <children>
+            <TableView fx:id="table" prefHeight="287.0" prefWidth="1006.0" visible="false">
+              <columns>
+                <TableColumn fx:id="tbid" minWidth="-Infinity" prefWidth="110.0" text="Product ID" />
+                <TableColumn fx:id="tbname" minWidth="-Infinity" prefWidth="240.0" text="Product Name " />
+                  <TableColumn fx:id="tbprice" minWidth="-Infinity" prefWidth="110.0" text="Price" />
+                  <TableColumn fx:id="tbcat" minWidth="-Infinity" prefWidth="200.0" text="Category" />
+                  <TableColumn fx:id="tbdis" minWidth="-Infinity" prefWidth="110.0" text="Discount" />
+                  <TableColumn fx:id="tbquant" minWidth="-Infinity" prefWidth="110.0" text="Product Quantity" />
+                  <TableColumn fx:id="tbexp" editable="false" minWidth="-Infinity" prefWidth="120.0" sortable="false" text="Expiration Date" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

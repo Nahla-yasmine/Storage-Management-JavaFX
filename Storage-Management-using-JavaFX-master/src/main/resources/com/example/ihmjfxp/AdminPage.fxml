@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  /* -  Storage management Project  -
+* This program was written by @Latif & @NahlaMih
+* for the IHM TP project (L3-ISIL)
+*/  -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="867.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ihmjfxp.AdminHomePageController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="240.0" style="-fx-background-color: #bbc3c9;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="254.0" fitWidth="364.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Admin%202.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="254.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="100.0" text="   Admin : " textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lbladminname" prefHeight="34.0" prefWidth="173.0" text="Admin Name" textAlignment="CENTER" textFill="#337390" underline="true" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="btn_product" mnemonicParsing="false" onAction="#btn_product_clicked" prefHeight="70.0" prefWidth="370.0" text="Products">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Products%204l2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_supplier" mnemonicParsing="false" onAction="#btn_supplier_clicked" prefHeight="70.0" prefWidth="370.0" text="Suppliers">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="979.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Suppliers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_stats" mnemonicParsing="false" onAction="#btn_stats_clicked" prefHeight="70.0" prefWidth="370.0" text="Statistics">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/stats.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_empset" mnemonicParsing="false" onAction="#btn_empset_clicked" prefHeight="70.0" prefWidth="370.0" text="Employees Settings">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Employee%20settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_adm_home" mnemonicParsing="false" onAction="#btn_adm_home_clicked" prefHeight="70.0" prefWidth="370.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/NovaradHome2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_logout" alignment="CENTER" contentDisplay="RIGHT" depthTest="DISABLE" mnemonicParsing="false" onAction="#btn_logout_clicked" prefHeight="70.0" prefWidth="370.0" text="Log Out">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="140.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <ImageView fitHeight="568.0" fitWidth="614.0" layoutX="472.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/Loginpagepic.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="521.0" layoutY="159.0" text="WELCOME !" textFill="#67cdfd">
+         <font>
+            <Font name="Calibri" size="96.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

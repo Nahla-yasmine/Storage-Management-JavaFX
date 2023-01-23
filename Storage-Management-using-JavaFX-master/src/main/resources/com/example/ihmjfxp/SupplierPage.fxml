@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  /* -  Storage management Project  -
+* This program was written by @Latif & @NahlaMih
+* for the IHM TP project (L3-ISIL)
+*/  -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ihmjfxp.SupplairController">
+   <children>
+      <VBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="240.0" style="-fx-background-color: #bbc3c9;">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="240.0" fitWidth="240.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Admin%202.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="236.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="32.0" prefWidth="100.0" text="   Admin : " textAlignment="CENTER">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="34.0" prefWidth="149.0" text="Admin Name" textAlignment="CENTER" textFill="#337390" underline="true" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Button fx:id="btn_product" mnemonicParsing="false" onAction="#btn_product_clicked" prefHeight="40.0" prefWidth="254.0" text="Products">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Products%204l2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_supplier" mnemonicParsing="false" onAction="#btn_supplier_clicked" prefHeight="40.0" prefWidth="254.0" text="Suppliers">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="979.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Suppliers.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_stats" mnemonicParsing="false" onAction="#btn_stats_clicked" prefHeight="40.0" prefWidth="254.0" text="Statistics">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/stats%2001.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_empset" mnemonicParsing="false" onAction="#btn_empset_clicked" prefHeight="40.0" prefWidth="254.0" text="Employees Settings">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Employee%20settings.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_adm_home" mnemonicParsing="false" onAction="#btn_adm_home_clicked" prefHeight="40.0" prefWidth="254.0" text="Home">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/NovaradHome2.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btn_logout" alignment="CENTER" contentDisplay="RIGHT" depthTest="DISABLE" mnemonicParsing="false" onAction="#btn_logout_clicked" prefHeight="40.0" prefWidth="254.0" text="Log Out">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="90.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/logout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="140.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="239.0" layoutY="-2.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="431.0" prefWidth="1015.0">
+         <children>
+            <ImageView fitHeight="159.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Suppliers.png" />
+               </image>
+            </ImageView>
+            <Line endX="831.2929077148438" endY="-2.071068048477173" startX="-110.0" startY="-2.071079730987549" stroke="#cccccc" strokeLineCap="ROUND" strokeWidth="5.0" />
+            <HBox alignment="CENTER" prefHeight="14.0" prefWidth="1015.0">
+               <children>
+                  <TextField fx:id="filterField" prefHeight="25.0" prefWidth="180.0" promptText="Search" />
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="17.0" prefWidth="1015.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Supplier's Name :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txt_firstname" promptText="Name">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Supplier's Lastname :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txt_lastname" promptText="Nickname">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Supplier's ID :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txt_id" promptText="ID">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="108.0" prefWidth="1015.0">
+               <children>
+                  <Label text="Supplier's Email :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" left="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txt_email" promptText="Email">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label text="Supplier's Phone :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txt_phone" promptText="Phone Number">
+                     <HBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="61.0" prefWidth="1015.0" spacing="150.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#Add_Suppleir" text="Add Supplier">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#Edit" text="Edit Supplier">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#Delete" text="Delete Supplier">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <TableView fx:id="table_suppleir" layoutX="434.0" layoutY="472.0" onMouseClicked="#getSelected" prefHeight="270.0" prefWidth="626.0">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="col_firstname" prefWidth="132.0" text="firstname" />
+            <TableColumn fx:id="col_lastname" prefWidth="105.0" text="last name" />
+            <TableColumn fx:id="col_email" prefWidth="200.0" text="Email" />
+            <TableColumn fx:id="col_phone" minWidth="0.0" prefWidth="113.0" text="phone" />
+         </columns>
+      </TableView>
+   </children>
+   <effect>
+      <ColorAdjust />
+   </effect>
+</AnchorPane>

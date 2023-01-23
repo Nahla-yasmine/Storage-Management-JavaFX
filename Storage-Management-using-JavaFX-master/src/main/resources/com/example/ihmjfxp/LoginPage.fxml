@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  /* -  Storage management Project  -
+* This program was written by @Latif & @NahlaMih
+* for the IHM TP project (L3-ISIL)
+*/  -->
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="867.0" prefWidth="1245.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ihmjfxp.LoginController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="867.0" prefWidth="622.5">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" text="Storage Management App" textAlignment="CENTER" textFill="#67cdfd" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="48.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="90.0" />
+               </VBox.margin>
+            </Label>
+            <ImageView fitHeight="622.0" fitWidth="816.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Loginpagepic.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="46.0" prefWidth="623.0">
+                     <children>
+                        <Label text="Tel :" textFill="#67cdfd">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="+213 XXX XXX XX XXX" textFill="#67cdfd">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="42.0" prefWidth="623.0">
+                     <children>
+                        <Label text="Email : " textFill="#67cdfd">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label text="SUPPORT@IHM-PROJECT.TRY" textFill="#67cdfd">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox layoutX="623.0" prefHeight="867.0" prefWidth="622.5" style="-fx-background-color: #67CDFD;">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Login.png" />
+                     </image>
+                  </ImageView>
+                  <Label text="LOGIN" textFill="WHITE">
+                     <font>
+                        <Font name="Calibri" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Line endX="450.0" startX="-100.0" strokeWidth="5.0">
+               <stroke>
+                  <LinearGradient endX="0.3886255924170616" endY="1.0" startX="1.0" startY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.40392157435417175" green="0.8039215803146362" blue="0.9921568632125854" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="50.0" prefWidth="136.0" text="Email Adr" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Login-user.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <TextField fx:id="txtUsername" promptText="Email used in Signup">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="100.0" top="10.0" />
+                     </padding>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Password :" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Login-pw.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <PasswordField fx:id="txtPassword" promptText="Password">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="100.0" top="10.0" />
+                     </padding>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <VBox alignment="CENTER" prefHeight="30.0" prefWidth="628.0">
+               <children>
+                  <Label fx:id="lblErrors" prefHeight="20.0" prefWidth="239.0" text=" ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Line endX="822.2929077148438" layoutX="200.0" startX="200.0" strokeWidth="5.0">
+               <stroke>
+                  <LinearGradient endX="0.4028436018957346" endY="1.0" startX="1.0" startY="0.981042654028436">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006711409395973154">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.5268456375838926">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" opacity="0.2557252049446106" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.7382550335570469">
+                           <color>
+                              <Color red="0.40392157435417175" green="0.8039215803146362" blue="0.9921568632125854" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.40392157435417175" green="0.8039215803146362" blue="0.9921568632125854" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <Button fx:id="btn_signin" mnemonicParsing="false" onAction="#btn_signin_clicked" text="Sign in" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/Login.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+            </HBox>
+            <Line endX="450.0" startX="-100.0" strokeWidth="5.0">
+               <stroke>
+                  <LinearGradient endX="0.4028436018957346" endY="1.0" startX="1.0" startY="0.981042654028436">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.40392157435417175" green="0.8039215803146362" blue="0.9921568632125854" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <HBox alignment="BASELINE_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonOnAction" onMouseClicked="#cancelButtonOnAction" prefHeight="45.0" prefWidth="200.0" text="EXIT" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/login-exit-red.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
